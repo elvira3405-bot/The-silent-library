@@ -16,25 +16,4 @@
   </style>
 </head>
 <body>
-<iframe src="cele_5_rani.pdf#toolbar=0" allow="fullscreen"></iframe>
-</body>
-  <script>
-  // Blochează click dreapta
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-
-  // Blochează combinații de taste
-  document.addEventListener('keydown', function(e) {
-    // Ctrl+S, Ctrl+P, Ctrl+U
-    if (e.ctrlKey && ['s', 'p', 'u'].includes(e.key.toLowerCase())) {
-      e.preventDefault();
-    }
-
-    // F12 (DevTools), PrintScreen
-    if (e.key === 'F12' || e.key === 'PrintScreen') {
-      e.preventDefault();
-    }
-  });
-</script>
 </html>
